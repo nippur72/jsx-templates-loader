@@ -1,6 +1,6 @@
 # jsx-templates-loader
 
-`jsx-templates-loader` is the webpack loader for [jsx-templates](https://github.com/nippur72/jsx-templates).
+`@nippur72/jsx-templates-loader` is the webpack loader for [jsx-templates](https://github.com/nippur72/jsx-templates).
 
 Allows to `require()` template source files directly from JavaScript,
 letting Webpack compile them and put in the bundle.
@@ -9,7 +9,7 @@ letting Webpack compile them and put in the bundle.
 
 Install in your Webpack build directory with:
 ```
-npm install --save-dev jsx-templates-loader
+npm install --save-dev @nippur72/jsx-templates-loader
 ```
 
 ## Configuration
