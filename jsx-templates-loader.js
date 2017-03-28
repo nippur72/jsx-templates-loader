@@ -7,6 +7,11 @@ module.exports = function(source, map) {
 	var query = queryString.parse(url.parse(this.query).query);
 	this.cacheable && this.cacheable();
 
+   // appends .tsx extension so that it can be compiled by typescript (ts-loader)
+   if(tobool(query.typescript)) {
+      this.resourcePath = this.resourcePath + ".tsx";
+   }   
+
    const options = {
       /*
       trace: tobool(query.trace) || false,
